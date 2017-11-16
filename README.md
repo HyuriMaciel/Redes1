@@ -7,13 +7,13 @@ Alunos: Hyuri Maciel e Ziran Moura
 
 <h2>Descrição e funcionalidades</h2>
 
-Este projeto tem como intuito realizar o monitoramento da temperatura e luminosidade de um ambiente residêncial ou empresarial.
-Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
+Este projeto tem como intuito realizar o monitoramento da temperatura e luminosidade de um ambiente residêncial ou empresarial. Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
 
 Também é realizado o acionamento de um Réle que tem intuito de acionar lâmpadas no ambiente.
-Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado com um shield Ethernt. 
 
-   <h3>Circuito e Material utilizado</h3>
+Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado a um shield Ethernt. 
+
+<h3>Circuito e Material utilizado</h3>
    
    1- Arduino UNO
    
@@ -75,7 +75,10 @@ retornando um objeto Cliente; Se nenhum cliente tiver dados disponíveis para le
         server.write(client.read());
          }   
          
-         
+<h3>Dificuldades e Trabalhos futuros</h3>
+ 
+O que poderiamos ter incrementado a mais do projeto seria mais sensores, como de movimento, umidade, chamas etc, com isso teriamos um maior monitoramento do ambiente. Também poderiamos de incluido o controle do arcondicionado, fazendo uma comparação da informação da temperatura fornecida pelo sensor de temperatura e fazendo um inferência sobre esses dados. Não só inferir sobre os dados de temperatura mais utilizar todos os dados fornecidos pelos sensores para inferir comportamentos na sala, como ligar e desligar um lâmpada, abrir e fechar uma cortina.
+
 <imagem web>         
          
          
