@@ -12,9 +12,13 @@ Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado
 
    <h3>Circuito e Material utilizado</h3>
    1- Arduino UNO
+   
    2- Shield Ethernet W5100
+   
    1- Sensor de Temperatura
+   
    1- Um sensor LDR de luminosidade 
+   
    2- relés de 5v de entrada
    
  <imagem do esquema>  
