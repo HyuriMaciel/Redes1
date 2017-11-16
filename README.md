@@ -29,7 +29,7 @@ Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado
    
 A programação do Arduino utiliza a biblioteca Ethernet.h que já vem embutida na IDE do Arduino.
 
-Essas biblioteca é projetada para trabalhar com o Arduino Ethernet Shield (Ethernet.h). Aa bibliotecaa permite que uma placa Arduino se conecte à internet. O podendo servir como um servidor que aceita conexões de recebimento ou um cliente que faz a saída de dados. As bibliotecas suportam até quatro conexões simultâneas (entrada ou saída ou uma combinação).
+Essas biblioteca é projetada para trabalhar com o Arduino Ethernet Shield (Ethernet.h). A biblioteca permite que uma placa Arduino se conecte à internet. O podendo servir como um servidor que aceita conexões de recebimento ou um cliente que faz a saída de dados. As bibliotecas suportam até quatro conexões simultâneas (entrada ou saída ou uma combinação).
 
 A biblioteca Ethernet (Ethernet.h) gerencia o chip W5100. 
 
@@ -77,7 +77,7 @@ retornando um objeto Cliente; Se nenhum cliente tiver dados disponíveis para le
          
 <h3>Dificuldades e Trabalhos futuros</h3>
  
-O que poderiamos ter incrementado a mais do projeto seria mais sensores, como de movimento, umidade, chamas etc, com isso teriamos um maior monitoramento do ambiente. Também poderiamos de incluido o controle do arcondicionado, fazendo uma comparação da informação da temperatura fornecida pelo sensor de temperatura e fazendo um inferência sobre esses dados. Não só inferir sobre os dados de temperatura mais utilizar todos os dados fornecidos pelos sensores para inferir comportamentos na sala, como ligar e desligar um lâmpada, abrir e fechar uma cortina.
+O que poderíamos ter incrementado a mais do projeto seria mais sensores, como de movimento, umidade, chamas etc, com isso teríamos um maior monitoramento do ambiente. Também poderíamos de incluído o controle do ar condicionado, fazendo uma comparação da informação da temperatura fornecida pelo sensor de temperatura e fazendo uma inferência sobre esses dados. Não só inferir sobre os dados de temperatura mais utilizar todos os dados fornecidos pelos sensores para inferir comportamentos na sala, como ligar e desligar uma lâmpada, abrir e fechar uma cortina.
 
 <imagem web>         
          
