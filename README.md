@@ -7,10 +7,10 @@ Alunos: Hyuri Maciel e Ziran Moura
 
 <h2>Descrição e funcionalidades</h2>
 
-Este projeto tem como intuito de realizar o monitoramento da temperatura e luminosidade de um ambiente residêncial ou empresarial.
+Este projeto tem como intuito realizar o monitoramento da temperatura e luminosidade de um ambiente residêncial ou empresarial.
 Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
 
-Também aciono dois Réles que tem intuito de acionar lâmpadas no ambiente.
+Também é realizado o acionamento de um Réle que tem intuito de acionar lâmpadas no ambiente.
 Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado com um shield Ethernt. 
 
    <h3>Circuito e Material utilizado</h3>
@@ -27,13 +27,19 @@ Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado
    
  <imagem do esquema>  
    
-A programação do Arduino utiliza a biblioteca Ethernet que já vem embutida na IDE do Arduino. Com ela, vamos criar um Web Server que vai receber as informações pela rede e acionar as portas. Esta bicliotecas possui funções de comunicação, escrita e leitura.
+A programação do Arduino utiliza a biblioteca Ethernet.h que já vem embutida na IDE do Arduino.
 
-O Arduino Ethernet Shield W5100 ou outro dispositivo dessa família, que além de possibilitar o acesso às informações na sua rede local, ainda pode ser conectado à internet.
+Essas biblioteca é projetada para trabalhar com o Arduino Ethernet Shield (Ethernet.h). Aa bibliotecaa permite que uma placa Arduino se conecte à internet. O podendo servir como um servidor que aceita conexões de recebimento ou um cliente que faz a saída de dados. As bibliotecas suportam até quatro conexões simultâneas (entrada ou saída ou uma combinação).
+
+A biblioteca Ethernet (Ethernet.h) gerencia o chip W5100. 
+
+Arduino comunica com o Shield usando o SPI. Que está nos pinos digitais 11, 12 e 13 no Uno.
+
+Essa biblioteca suporta o shield  Arduino Ethernet Shield W5100 ou outro dispositivo dessa família.
    
 Acoplando o Ethernet Shield W5100 ao Arduino, basta conectar o cabo de rede para que,para assim passar a monitorar o estado de sensores, chaves e outros dispositivos à partir do browser do computador. Este Shield é baseado no ethernet chip Wiznet W5100 (datasheet link) e fornece um endereço IP compatível com os protocolos TCP e UDP.   
 
-Primeiro devemos configura o shield ethernet com um endereco IP, gateway, mascara de rede, nas váriaveis:
+Primeiro devemos configura o shield ethernet com um endereco IP, gateway, mascara de rede, nas váriaveis, Exemplo:
 
         mac[] = { 0xA4, 0x28, 0x72, 0xCA, 0x55, 0x2F };
         ip[] = { 192, 168, 0, 110 };
