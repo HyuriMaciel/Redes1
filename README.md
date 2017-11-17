@@ -7,9 +7,8 @@ Alunos: Hyuri Maciel e Ziran Moura
 
 <h2>Descrição e funcionalidades</h2>
 
-Este projeto tem como intuito realizar o monitoramento da temperatura e luminosidade de um ambiente residêncial ou empresarial. Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
+Este projeto tem como intuito realizar o monitoramento da temperatura, umidade  e luminosidade de um ambiente residêncial ou empresarial. Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
 
-Também é realizado o acionamento de um Réle que tem intuito de acionar lâmpadas no ambiente.
 
 Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado a um shield Ethernt. 
 
@@ -17,15 +16,13 @@ Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado
    
    1- Arduino UNO
    
-   2- Shield Ethernet W5100
-   
-   1- Sensor de Temperatura
-   
+   2- Shield Ethernet W5100   
+     
    1- Um sensor LDR de luminosidade 
    
-   2- relés de 5v de entrada
+   1- sensor STH15 (sensor de temperatura e umidade)
    
- <imagem do esquema>  
+
    
 A programação do Arduino utiliza a biblioteca Ethernet.h que já vem embutida na IDE do Arduino.
 
@@ -77,9 +74,11 @@ retornando um objeto Cliente; Se nenhum cliente tiver dados disponíveis para le
          
 <h3>Dificuldades e Trabalhos futuros</h3>
  
-O que poderíamos ter incrementado a mais do projeto seria mais sensores, como de movimento, umidade, chamas etc, com isso teríamos um maior monitoramento do ambiente. Também poderíamos de incluído o controle do ar condicionado, fazendo uma comparação da informação da temperatura fornecida pelo sensor de temperatura e fazendo uma inferência sobre esses dados. Não só inferir sobre os dados de temperatura mais utilizar todos os dados fornecidos pelos sensores para inferir comportamentos na sala, como ligar e desligar uma lâmpada, abrir e fechar uma cortina.
+Uma dificuldade foi para criar um servidor Web onde poderiamos hospedar uma página web mais interativa, ficando assim para trabalhos futuros.
 
-<imagem web>         
+O que poderíamos ter incrementado a mais do projeto seria mais sensores, como de movimento, umidade, chamas etc, com isso teríamos um maior monitoramento do ambiente.
+Também poderíamos de incluído o controle do ar condicionado, fazendo uma comparação da informação da temperatura fornecida pelo sensor de temperatura e fazendo uma inferência sobre esses dados. Não só inferir sobre os dados de temperatura mais utilizar todos os dados fornecidos pelos sensores para inferir comportamentos na sala, como ligar e desligar uma lâmpada, abrir e fechar uma cortina.
+         
          
          
         
