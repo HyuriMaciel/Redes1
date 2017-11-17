@@ -9,6 +9,8 @@ Alunos: Hyuri Maciel e Ziran Moura
 
 Este projeto tem como intuito realizar o monitoramento da temperatura, umidade  e luminosidade de um ambiente residêncial ou empresarial. Para a realização do projeto foram usados conceitos de socket() e read() em liguagem C adaptada para programação em arduino.
 
+O arduino Uno capitura dados externos do ambiente através dos sensores trata esses dados através de bibliotecas especificas. esses dados podem ser acessados externamente através de um browse. Basta realizar a cominucação com o IP válido que foi conficurado no arduino.
+
 
 Utilizamos para controle e envio dos dados dos sensores um arduino UNO integrado a um shield Ethernt. 
 
