@@ -4,6 +4,10 @@ Projeto disciplina de redes-1 do curso Ciência da Computação-UFAL
 Professor: Leandro Sales
 Alunos: Hyuri Maciel e Ziran Moura
 
+<h3> Organização git </h3>
+   * pasta: projetoredes1 contém o código que deve ser carregado no arduino com as devidas configarções de IP, gateway e mascara de rede.
+   * esquema_bb: contém uma imagem.jpg com circuito esquemático da mantagem do arduino e os sensores.
+
 
 <h2>Descrição e funcionalidades</h2>
 
@@ -35,6 +39,8 @@ A biblioteca Ethernet (Ethernet.h) gerencia o chip W5100.
 Arduino comunica com o Shield usando o SPI. Que está nos pinos digitais 11, 12 e 13 no Uno.
 
 Essa biblioteca suporta o shield  Arduino Ethernet Shield W5100 ou outro dispositivo dessa família.
+
+O primeiro passo devemos setar corretamente no shield ethernet é configurá-lo com um endereço IP válido da sua rede.
    
 Acoplando o Ethernet Shield W5100 ao Arduino, basta conectar o cabo de rede para que,para assim passar a monitorar o estado de sensores, chaves e outros dispositivos à partir do browser do computador. Este Shield é baseado no ethernet chip Wiznet W5100 (datasheet link) e fornece um endereço IP compatível com os protocolos TCP e UDP.   
 
