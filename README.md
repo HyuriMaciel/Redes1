@@ -5,7 +5,9 @@ Professor: Leandro Sales
 Alunos: Hyuri Maciel e Ziran Moura
 
 <h3> Organização git </h3>
+
    * pasta: projetoredes1 contém o código que deve ser carregado no arduino com as devidas configarções de IP, gateway e mascara de rede.
+   
    * esquema_bb: contém uma imagem.jpg com circuito esquemático da mantagem do arduino e os sensores.
 
 
